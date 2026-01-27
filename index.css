@@ -1,1 +1,18 @@
 /* Le code CSS spécifique à la page d'accueil */
+
+/* Parametres */
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+h1{
+    font-family: "Krona One";
+    font-size: 30px;
+}
+h2{
+    font-family: "Krona One";
+}
+h3{
+    font-family: "Krona One";
+}
