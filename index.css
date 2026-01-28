@@ -37,5 +37,10 @@ nav{
     li{
         list-style: none;
     }
-    
+    width: 100vh;
+}
+header{
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
