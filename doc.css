@@ -245,6 +245,7 @@ header {
      display: flex;
      flex-direction: column;
      gap: 20px;
+     padding-bottom: 30px;
      ol{
           font-family: "Poppins";
      }
