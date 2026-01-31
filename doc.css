@@ -241,7 +241,17 @@ header {
      align-items: center;
      gap: 20px;
 }
-
+.vert{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     ol{
+          font-family: "Poppins";
+     }
+}
+.stub{
+     text-align: center;
+}
 /* Footer */
 
 .logoText {
@@ -259,7 +269,7 @@ header {
      justify-content: center;
      gap: 20px;
      padding: 40px 0px;
-
+     background-color: var(--head-bg-color);
      strong {
           font-family: "Poppins";
      }
@@ -292,4 +302,5 @@ footer {
      display: flex;
      justify-content: space-between;
      padding: 0px 10px 10px 10px;
+     background-color: var(--head-bg-color);
 }
