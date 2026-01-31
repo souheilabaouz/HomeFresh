@@ -1,165 +1,171 @@
-/* Le code CSS spécifique à la page de documentation */
+/* Parametres */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 
-/* :root {
+:root {
     --main-color: #00CCAA;
     --bg-color: #FAFFFE;
     --texte-color: #002D26;
     --head-bg-color: #e0f8f4;
-} */
-
+}
+span{
+    font-family: "Krona One";
+    font-weight: 100;
+}
 h1 {
-     text-align: center;
-     color: #2e3533;
-     font-size: 50px;
-     font-family: "Krona One";
-     color: #002D26;
-     color: #00CCAA;
+    font-family: "Krona One";
+    font-size: 30px;
+    color: var(--texte-color);
 }
 
 h2 {
-     text-align: center;
-     color: #2e3533;
-     font-family: "Krona One";
-     color: #002D26;
-     color: #00CCAA;
+    font-family: "Krona One";
+    justify-self: anchor-center;
+    font-size: 32px;
+    padding: 50px;
 }
 
 h3 {
-     text-align: center;
-     color: #2e3533;
-     font-size: 27px;
-     font-family: "Krona One";
-     color: #002D26;
-     color: #00CCAA;
-
+    font-family: "Krona One";
 }
 
-h4 {
-     text-align: center;
-     color: #2e3533;
-     font-size: 25px;
-    color: #00CCAA;
+p {
+    font-family: "Poppins";
 }
 
-body {
-     background-image: url();
+/* Container Settings */
+.container {
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 20px;
+}
+body{
+    background-color: var(--bg-color);
+}
 
+.padding-section {
+    padding: 24px 24px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--main-color);
+    border-radius: 500px;
+    width: 700px;
+    padding-right: 40px;
+    padding-left: 20px;
+    background-color: #fdfdfd96;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    z-index: 1;
+
+    ul {
+        display: flex;
+        gap: 50px;
+    }
+    li {
+        list-style: none;
+        font-family: "Krona One";
+    }
+    a {
+        color: var(--texte-color);
+        text-decoration: none;
+    }
+    .btncontact {
+        background-color: var(--main-color);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 10px;
+        font-family: "Poppins";
+        color: var(--bg-color);
+    }
 }
 
 header {
-     background-color: #e0f8f4;
-     padding: 100px;
-
-     p {
-          padding: 30px;
-          display: flex;
-          align-items: center;
-          font-size: 20px;
-     }
-
-     div {
-          text-align-last: center;
-
-     }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: var(--head-bg-color);
+    
 }
 
-nav {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     border: 3px solid #00CCAA;
-     border-radius: 500px;
-     width: 700px;
-     padding-right: 40px;
-     padding-left: 20px;
-     backdrop-filter: blur(10px);
-     position: fixed;
-     top: 5%;
-     left: 25%;
 
-     ul {
-          display: flex;
-          gap: 50px;
-     }
+/* here */
 
-     li {
-          list-style: none;
-          font-family: "Krona One";
-     }
+.objectif{
+     background-color: var(--head-bg-color);
+     div:first-child{
 
-     a {
-          color: var(--texte-color);
-          text-decoration: none;
-     }
-
-     .btncontact {
-          background-color: var(--main-color);
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 20px;
-          padding-left: 20px;
-          border-radius: 10px;
-          font-family: "Poppins";
-          color: var(--bg-color);
      }
 }
 
 
 
-.objectif {
-     p {
-          place-self: anchor-center;
-          font-size: 20px;
-     }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.logoText{
+    display: flex;
+
+    p{
+        width: 300px;
+        text-align: center;
+        padding-left: 20px;
+    }
 }
-.jeune{
-   p{
-     text-align: center;
-     font-size: 20px;
-     padding-top: 30px;
-   }
-     
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0px;
+    strong{
+        font-family: "Poppins";
+    }
+    ul{
+        list-style: none;
+    }
 }
-.design{
-     p{
-          font-size: 20px;
-          text-align: center;
-     }
-     ul{
-       font-size: 20px;   
-     }
+.socials{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
-.vert{
-     font-size: 20px;
-     padding: 20px;
-     p{
-          
-     }
+.thirddiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    ul{
+        font-family: "Poppins";
+        padding-left: 50px;
+    }
 }
-.cardstechno{
-      display: flex;
-      text-align: center;
-      gap: 35px;
-       div{
-            width: 554px;
-            height: 250px;
-            border: solid 1px var(--main-color);
-            border-radius: 20px;
-            box-shadow:#0000000a 0px 0px 5px 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 30px;
-            text-align: center;
-        }
-        span{
-          color: #00CCAA;
-          font-size: 20px;
-        }
-        }
-.fig{
-     p{
-          text-align: center;
-          font-size: 20px;
-     }
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 10px 10px;
 }

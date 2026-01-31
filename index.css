@@ -20,6 +20,7 @@ span{
 h1 {
     font-family: "Krona One";
     font-size: 30px;
+    color: var(--texte-color);
 }
 
 h2 {
@@ -27,14 +28,17 @@ h2 {
     justify-self: anchor-center;
     font-size: 32px;
     padding: 50px;
+    color: var(--texte-color);
 }
 
 h3 {
     font-family: "Krona One";
+    color: var(--texte-color);
 }
 
 p {
     font-family: "Poppins";
+    color: var(--texte-color);
 }
 
 /* Container Settings */
@@ -375,15 +379,18 @@ header {
     gap: 50px;
     h2{
         text-align: center;
+        color: var(--bg-color);
     }
     p:first-child{
         font-size: 29px;
         width: 436px;
         text-align: start;
         padding-bottom: 50px;
+        color: var(--bg-color);
     }
     p:last-child{
         font-size: 43px;
+        color: var(--bg-color);
     }
 }
 #counter{
