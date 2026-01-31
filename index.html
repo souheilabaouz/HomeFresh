@@ -38,7 +38,7 @@
         <li><a href="">Acceuil</a></li>
         <li><a href="doc.html">Document</a></li>
       </ul>
-      <a class="btncontact" href="">Contact</a>
+      <a class="btncontact" href="#contact">Contact</a>
     </nav>
     <!-- Titre -->
 
@@ -175,16 +175,33 @@
 
     <!-- Section Etaps (Steps section) -->
     <section class="padding-section steps">
-      <div class="container nice">
+      <div class="border"></div>
+      <div class="border1"></div>
+      <div class="border2"></div>
+
+      <div class="etap"><strong>Etape 1</strong></div>
+      <div class="etap1"><strong>Etape 2</strong></div>
+      <div class="etap2"><strong>Etape 3</strong></div>
+
+      <div class="container">
         <h2>Agissez dès aujourd'hui pour un été <br> plus solidaire et plus frais</h2>
-        <p>En quelques minutes, rejoignez une initiative humaine qui protège les étudiants de la chaleur tout en apportant un soutien précieux aux personnes âgées.</p>
-        <div class="border"></div>
-          
-        <div class="etaps"></div>
-        <div class="border"></div>
-        <div class="epats"></div>
-        <div class="border"></div>
-        <div class="etaps"></div>
+        <p id="opacityPara">En quelques minutes, rejoignez une initiative humaine qui protège les étudiants de la chaleur tout en apportant un soutien précieux aux personnes âgées.</p>
+        <div class="etapPara">
+          <p> 
+            Inscrivez vous en moins de 3 minutes 
+            Créez votre profil étudiant ou senior, selon votre situation.
+          </p>
+
+          <p>
+            Trouvez un logement ou un étudiant compatible 
+            Nous vous proposons des profils vérifiés selon vos besoins <br> et disponibilités.
+          </p>
+
+          <p>
+            Profitez d’un échange solidaire et sécurisé 
+            Un logement adapté à la canicule contre une aide  quotidienne légère et bienveillante.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -194,7 +211,9 @@
         <h2>Nos Avis</h2>
         <div class="stats">
           <p>Avec <span>Home Fresh</span>, vous ne serez pas déçu : 85 % de nos utilisateurs ont des avis positifs.</p>
-          <p><span>10M</span> Satisfait</p>
+          <div id="counter">
+              <p><span class="counter">0</span> <br>personnes satisfait!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -215,8 +234,19 @@
       </div>
     </section>
 
+    <!-- Contact Form -->
+    <section class="form" id="contact">
+      <h2>On est la pour vous</h2>
+      <form action="">
+        <input type="text" name="name" placeholder="Nom Prénom" id="puts" required>
+        <input type="email" name="email" placeholder="Email" id="puts" required>
+
+        <textarea name="messages" id="" placeholder="Message" maxlength="200" required></textarea>
+        <input type="submit" value="Envoyer" id="submitBtn">
+    </form>
+    </section>
     <!-- Foot of the site -->
-    <footer>
+    <section class="footer">
       <svg width="99" height="75" viewBox="0 0 99 75" fill="none" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="99" height="75" fill="url(#pattern0_3979_2432)" />
@@ -248,8 +278,13 @@
             <li>Condition d'utilisation</li>
           </ul>
         </div>
-    </footer>
+      </section>
+      <footer>
+        <p>@Copyright 2026 Foundation Hello Fresh</p>
+        <p>All Rights Reserved to (~ Jaina Chaima Souheila Michael ~)</p>
+      </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
