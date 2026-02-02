@@ -239,6 +239,7 @@ header {
         flex-direction: column;
         gap: 50px;
         div{
+            
             width: 554px;
             height: 550px;
             /* background-color: var(--bg-color); */
