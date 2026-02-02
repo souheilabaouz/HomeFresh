@@ -1,81 +1,78 @@
-/* Le code CSS spécifique à la page de documentation */
+/* Parametres */
+* {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+}
 
-/* :root {
-    --main-color: #00CCAA;
-    --bg-color: #FAFFFE;
-    --texte-color: #002D26;
-    --head-bg-color: #e0f8f4;
-} */
+:root {
+     --main-color: #00CCAA;
+     --bg-color: #FAFFFE;
+     --texte-color: #002D26;
+     --head-bg-color: #e0f8f4;
+}
+
+span {
+     font-family: "Krona One";
+     font-weight: 100;
+}
 
 h1 {
-     text-align: center;
-     color: #2e3533;
-     font-size: 50px;
      font-family: "Krona One";
-     color: #002D26;
-     color: #00CCAA;
+     font-size: 40px;
+     color: var(--texte-color);
 }
 
 h2 {
-     text-align: center;
-     color: #2e3533;
      font-family: "Krona One";
-     color: #002D26;
-     color: #00CCAA;
+     justify-self: anchor-center;
+     font-size: 32px;
+     padding: 50px;
+     color: var(--texte-color);
 }
 
 h3 {
-     text-align: center;
-     color: #2e3533;
-     font-size: 27px;
      font-family: "Krona One";
-     color: #002D26;
-     color: #00CCAA;
-
+     color: var(--texte-color);
 }
 
-h4 {
-     text-align: center;
-     color: #2e3533;
-     font-size: 25px;
-    color: #00CCAA;
+p {
+     font-family: "Poppins";
+     font-size: 20px;
+     color: var(--texte-color);
+}
+
+/* Container Settings */
+.container {
+     max-width: 1080px;
+     margin: auto;
+     padding-top: 20px;
 }
 
 body {
-     background-image: url();
-
+     background-color: var(--bg-color);
 }
 
-header {
-     background-color: #e0f8f4;
-     padding: 100px;
-
-     p {
-          padding: 30px;
-          display: flex;
-          align-items: center;
-          font-size: 20px;
-     }
-
-     div {
-          text-align-last: center;
-
-     }
+.padding-section {
+     padding: 24px 24px;
 }
 
+/* Navbar */
 nav {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     border: 3px solid #00CCAA;
+     border: 2px solid var(--main-color);
      border-radius: 500px;
      width: 700px;
      padding-right: 40px;
      padding-left: 20px;
+     background-color: #fdfdfd96;
      backdrop-filter: blur(10px);
      position: fixed;
      top: 5%;
      left: 25%;
+     z-index: 1;
 
      ul {
           display: flex;
@@ -104,62 +101,208 @@ nav {
      }
 }
 
+header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 25px;
+     background-color: var(--head-bg-color);
 
+}
+
+
+/* here */
 
 .objectif {
-     p {
-          place-self: anchor-center;
-          font-size: 20px;
-     }
+     background-color: var(--head-bg-color);
+     padding-top: 100px;
 }
-.jeune{
-   p{
+
+.ons {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.nob {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
      text-align: center;
-     font-size: 20px;
-     padding-top: 30px;
-   }
-     
 }
-.design{
-     p{
-          font-size: 20px;
+
+#personna {
+     background-color: var(--texte-color);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 120px;
+
+     h2 {
+          color: var(--bg-color);
           text-align: center;
      }
-     ul{
-       font-size: 20px;   
+
+     h3 {
+          color: var(--bg-color);
+
+     }
+
+     div {
+          display: flex;
+          flex-direction: column;
+
+          img {
+               width: 749px;
+          }
      }
 }
-.vert{
-     font-size: 20px;
-     padding: 20px;
-     p{
-          
-     }
+
+.start {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.personna {
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+}
+
+/* Fonction */
+
+.jeune {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.explain {
+     display: flex;
+     flex-direction: column;
+     background-color: var(--bg-color);
+     gap: 15px;
+     border: var(--main-color) solid 2px;
+     border-radius: 20px;
+     box-shadow: #0000000a 0px 0px 5px 5px;
+     padding: 15px 15px;
+}
+
+/* Tech */
+
+.fig{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+}
+.technologie{
+     position: relative;
+    z-index: -1;
 }
 .cardstechno{
-      display: flex;
-      text-align: center;
-      gap: 35px;
-       div{
-            width: 554px;
-            height: 250px;
-            border: solid 1px var(--main-color);
-            border-radius: 20px;
-            box-shadow:#0000000a 0px 0px 5px 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 30px;
-            text-align: center;
-        }
-        span{
-          color: #00CCAA;
-          font-size: 20px;
-        }
-        }
-.fig{
-     p{
-          text-align: center;
-          font-size: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     div{
+          border-bottom: var(--main-color) solid 2px;
+          border-left: var(--main-color) solid 2px;
+          padding: 10px;
+          box-shadow: #0000000a 0px 0px 5px 5px;
+          background-color: var(--bg-color);
      }
+}
+
+.bg-blur {
+    border-radius: 500px;
+    height: 400px;
+    aspect-ratio: 1;
+    position: absolute;
+    filter: blur(100px);
+    width: 400px;
+    opacity: 10%;
+}
+.green{
+    background-color: var(--main-color);
+    top: -15%;
+    left: -5%;
+    z-index: -2;
+}
+.green2 {
+    background-color: var(--main-color);
+    top: 62%;
+    left: 65%;
+    z-index: -2;
+}
+
+.design{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+}
+.vert{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     padding-bottom: 30px;
+     ol{
+          font-family: "Poppins";
+     }
+}
+.stub{
+     text-align: center;
+}
+/* Footer */
+
+.logoText {
+     display: flex;
+
+     p {
+          width: 300px;
+          text-align: center;
+          padding-left: 20px;
+     }
+}
+
+.footer {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     padding: 40px 0px;
+     background-color: var(--head-bg-color);
+     strong {
+          font-family: "Poppins";
+     }
+
+     ul {
+          list-style: none;
+     }
+}
+
+.socials {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.thirddiv {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+
+     ul {
+          font-family: "Poppins";
+          padding-left: 50px;
+     }
+}
+
+footer {
+     display: flex;
+     justify-content: space-between;
+     padding: 0px 10px 10px 10px;
+     background-color: var(--head-bg-color);
 }

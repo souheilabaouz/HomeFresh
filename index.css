@@ -20,6 +20,7 @@ span{
 h1 {
     font-family: "Krona One";
     font-size: 30px;
+    color: var(--texte-color);
 }
 
 h2 {
@@ -27,14 +28,17 @@ h2 {
     justify-self: anchor-center;
     font-size: 32px;
     padding: 50px;
+    color: var(--texte-color);
 }
 
 h3 {
     font-family: "Krona One";
+    color: var(--texte-color);
 }
 
 p {
     font-family: "Poppins";
+    color: var(--texte-color);
 }
 
 /* Container Settings */
@@ -46,7 +50,6 @@ p {
 body{
     background-color: var(--bg-color);
 }
-
 .padding-section {
     padding: 24px 24px;
 }
@@ -65,7 +68,9 @@ nav {
     backdrop-filter: blur(10px);
     position: fixed;
     top: 5%;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 
     ul {
         display: flex;
@@ -100,8 +105,8 @@ header {
     
 }
 #hero{
-    height: 450px;
-    padding: 55px 100px;
+    height: 110vh;
+    padding: 120px 50px 0px 50px;
     background-color: var(--head-bg-color);
 }
 .hero {
@@ -159,8 +164,6 @@ header {
 }
 
 .cardsProblem {
-    max-width: 700px;
-    margin: 1em auto;
     gap: 50px;
     display: flex;
     span{
@@ -169,7 +172,7 @@ header {
     }
     div {
         flex-direction: column;
-        width: 378px;
+        width: 478px;
         height: 329px;
         display: flex;
         justify-content: center;
@@ -195,7 +198,34 @@ header {
 }
 
 /* Styles Nos solutions */
-
+.solution{
+    position: relative;
+    z-index: -1;
+}
+.nt{
+    padding-bottom: 40px;
+}
+.bg-blur {
+    border-radius: 500px;
+    height: 400px;
+    aspect-ratio: 1;
+    position: absolute;
+    filter: blur(100px);
+    width: 400px;
+    opacity: 10%;
+}
+.green{
+    background-color: var(--main-color);
+    top: 5%;
+    left: 10%;
+    z-index: -2;
+}
+.green2 {
+    background-color: var(--main-color);
+    top: 60%;
+    left: 60%;
+    z-index: -2;
+}
 .groupBoth{
     display: flex;
     flex-direction: row;
@@ -209,11 +239,13 @@ header {
         flex-direction: column;
         gap: 50px;
         div{
+            
             width: 554px;
-            height: 250px;
-            border: solid 1px var(--main-color);
-            border-radius: 20px;
-            box-shadow:#0000000a 0px 0px 5px 5px;
+            height: 550px;
+            /* background-color: var(--bg-color); */
+            border-right: solid 2px var(--main-color);
+            padding: 20px;
+            /* box-shadow:#0000000a 0px 0px 5px 5px; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -224,9 +256,7 @@ header {
 }
 
 /* What they think */
-.think{
-    
-}
+
 .avisContainer {
     gap: 20px;
     display: flex;
@@ -253,12 +283,100 @@ header {
 
 /* Etaps */
 .steps{
+    position: relative;
    text-align: center;
 }
 
 /* Later */
+#opacityPara{
+    font-size: 20px;
+    color: var(--texte-color);
+    opacity: 60%;
+}
+.etapPara{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    padding: 200px 0px 50px 0px;
+    p{
+        text-align: start;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--texte-color);
+    }
+    p:last-child{
+        padding-bottom: 15px;
+    }
+}
+.border{
+    background-color: var(--main-color);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 30%;
+    left: 0%;
+    opacity: 40%;
+}
+.border1{
+    background-color: var(--main-color);
+    height: 5.5px;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 53%;
+    left: 0%;
+    opacity: 40%;
+}
+.border2{
+    background-color: var(--main-color);
+    height: 6.4px;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 76%;
+    left: 0%;
+    opacity: 40%;
+}
+.etap{
+    position: absolute;
+    z-index: -2;
+    opacity: 40%;
+    top: 36%;
+    left: 5%;
+    strong{
+        color: var(--main-color);
+        font-family: "Krona One";
+        font-size: 50px;
+    }
+}
 
+.etap1{
+    position: absolute;
+    z-index: -2;
+    opacity: 40%;
+    top: 57.5%;
+    left: 5%;
+    strong{
+        color: var(--main-color);
+        font-family: "Krona One";
+        font-size: 50px;
+    }
+}
 
+.etap2{
+    position: absolute;
+    z-index: -2;
+    opacity: 40%;
+    top: 81.7%;
+    left: 5%;
+    strong{
+        color: var(--main-color);
+        font-family: "Krona One";
+        font-size: 50px;
+    }
+}
+/* Statistics */
 .stats{
     background-color: var(--texte-color);
     color: var(--bg-color);
@@ -266,16 +384,22 @@ header {
     gap: 50px;
     h2{
         text-align: center;
+        color: var(--bg-color);
     }
     p:first-child{
         font-size: 29px;
         width: 436px;
         text-align: start;
         padding-bottom: 50px;
+        color: var(--bg-color);
     }
     p:last-child{
-        font-size: 50px;
+        font-size: 43px;
+        color: var(--bg-color);
     }
+}
+#counter{
+    width: 400px;
 }
 
 /* CTA Styles */
@@ -299,6 +423,46 @@ header {
     }
 }
 
+/* Contact Form */
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    gap: 20px;
+    #puts{
+        font-family: "Poppins";
+        border: none;
+        border-bottom: var(--main-color) solid 2px;
+        outline: none;
+        width: 450px;
+    }
+    textarea{
+        font-family: "Poppins";
+        border: none;
+        width: 450px;
+        height: 100px;
+        border: var(--main-color) solid 2px;
+        outline: none;
+        background-color: var(--bg-color);
+        resize: none;
+    }
+}
+#submitBtn{
+    border-radius: 10px;
+    background-color: #002D26;
+    color: var(--bg-color);
+    font-weight: 500;
+    width: 255px;
+    border: none;
+    padding: 10px 15px;
+}
+
 /* Footer */
 
 .logoText{
@@ -310,7 +474,7 @@ header {
         padding-left: 20px;
     }
 }
-footer{
+.footer{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -337,4 +501,10 @@ footer{
         font-family: "Poppins";
         padding-left: 50px;
     }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 10px 10px;
 }
