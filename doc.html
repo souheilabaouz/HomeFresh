@@ -15,6 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,27 +37,29 @@
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="doc.html">Documentation</a></li>
       </ul>
-      <a class="btncontact" href="index.html#contact">Contact</a>
+      <a class="btn" href="index.html#contact">Contact</a>
     </nav>
   </header>
   <main>
 
     <section class="padding-section objectif">
       <!-- contexte-->
-      <div class="container">
-        <div class="ons">
-          <h1>Contexte :</h1>
-          <p>
-            Ce projet a été développé dans un contexte de transition écologique et de fragilisation sociale, où le
-            réchauffement climatique accentue les
-            inégalités existantes. Les étudiants font face à une précarité croissante du logement, tandis que les
-            personnes
-            âgées subissent un isolement renforcé et des difficultés dans la gestion des tâches quotidiennes. Nous avons
-            décidé de creer une application mobile qui met en relation étudiants et seniors pour créer un logement
-            intergénérationnel solidaire et apporter une aide quotidienne aux personnes âgées.
-          </p>
+      <div class="container docHeader">
+        <div>
+          <img src="assets/mdi_eye-outline.svg" alt="">
+          <p>Contexte :</p>
         </div>
-        <div class="nob">
+        <h1>
+          Face à la transition écologique et aux fragilités sociales croissantes, nous avons créé une application mobile
+          mettant en relation étudiants et seniors afin de favoriser un logement intergénérationnel solidaire et une
+          aide quotidienne aux personnes âgées.
+          </h>
+      </div>
+    </section>
+
+    <section class="padding-section">
+      <div class="container goal">
+        <div>
           <h2>Notre objectif </h2>
           <p>
             Favoriser la solidarité intergénérationnelle en offrant aux étudiants un logement frais, gratuit <br> et aux
@@ -70,15 +73,19 @@
     <!-- Mettre personna -->
     <section class="padding-section" id="personna">
       <div class="container">
-        <h2>Qui sont nos cibles ? </h2>
+        <h2>A qui on s'adresse ? </h2>
         <div class="personna">
           <div class="start">
             <h3>Madame Martine:</h3>
             <img src="Archetype 4.png">
+            <h3>User flow:</h3>
+            <img src="assets/Group 633068.svg" alt="">
           </div>
           <div class="start">
             <h3>Notre jeune Sarah:</h3>
             <img src="Archetype 5.png">
+            <h3>User flow:</h3>
+            <img src="assets/user flow 1.svg" alt="">
           </div>
         </div>
       </div>
@@ -104,8 +111,16 @@
               Ils précisent les conditions d’accueil, les règles de vie ainsi que les aides du quotidien souhaitées
               (présence, courses, petits services).</p>
           </div>
-          <img src="assets/user flow 1.svg" alt="">
-          <img src="assets/Group 633068.svg" alt="">
+
+          <div class="explain">
+            <h3>Messagerie</h3>
+
+            <p>Ainsi, les personnes âgées et les jeunes peuvent communiquer entre eux. Par exemple, sur des sujets comme
+              quoi faire, comment s'organiser, etc... Cela leur permet également de potentiellement créer des liens.</p>
+          </div>
+
+
+
         </div>
         <!-- user flow -->
       </div>
@@ -113,9 +128,38 @@
     <section class="section-padding">
       <div class="container prototype">
         <iframe
-        src="https://embed.figma.com/proto/P4f4xYHfw27QbInKA1c1Gv/Fraiche?node-id=3461-1820&p=f&scaling=scale-down&content-scaling=fixed&page-id=3312%3A2&starting-point-node-id=3461%3A1820&show-proto-sidebar=0&embed-host=share%22"
-        width="390" height="844" style="border-radius: 24px; border: none;"
-        allowfullscreen></iframe>
+          src="https://embed.figma.com/proto/P4f4xYHfw27QbInKA1c1Gv/Fraiche?node-id=3461-1820&p=f&scaling=scale-down&content-scaling=fixed&page-id=3312%3A2&starting-point-node-id=3461%3A1820&show-proto-sidebar=0&embed-host=share%22"
+          width="390" height="844" style="border-radius: 24px; border: none;" allowfullscreen>
+        </iframe>
+        <img src="assets/ChatGPT Image 3 févr. 2026, 16_39_55.png" alt="">
+      </div>
+
+    </section>
+    <section class="padding-section plans">
+      <div class="container">
+        <h2>Comment le projet a été organisé ? </h2>
+        <div class="ladder">
+          <div class="step">
+            <span class="circle">1</span>
+            <p><strong>1 ère semaine :</strong> Veille et recherche de la problématique</p>
+          </div>
+
+          <div class="step">
+            <span class="circle">2</span>
+            <p><strong>2 ème semaine :</strong> Lancement des wireframes basse fidélité et test utilisateur</p>
+          </div>
+
+          <div class="step">
+            <span class="circle">3</span>
+            <p><strong>3 ème semaine :</strong> Création des wireframes haute fidélité</p>
+          </div>
+
+          <div class="step">
+            <span class="circle">4</span>
+            <p><strong>4 ème semaine :</strong> Préparation des pitchs</p>
+          </div>
+        </div>
+
       </div>
     </section>
     <!-- Technologie utilisées -->
@@ -126,7 +170,7 @@
       <div class="container">
         <div class="fig">
           <h2>
-            Les technologie utilisées
+            Les outils de travail utilisées
           </h2>
 
           <p>
@@ -154,46 +198,51 @@
       </div>
     </section>
     <!-- Pourquoi ce design -->
-    <section class="padding-section">
+    <section class="padding-section colors">
       <div class="container design">
-        <h2>Choix des couleurs et du design</h2>
-        <p class="stub">Le design de l’application a été pensé pour créer un climat de confiance, favoriser la
-          lisibilité pour tous
-          les
-          âges et refléter les valeurs de solidarité, de bienveillance et de lien intergénérationnel.
-        </p>
+        <div>
+          <h2>Choix des couleurs et du design</h2>
+          <p class="stub">Le design de l’application a été pensé pour créer un climat de confiance, favoriser la
+            lisibilité pour tous
+            les
+            âges et refléter les valeurs de solidarité, de bienveillance et de lien intergénérationnel.
+          </p>
+        </div>
 
         <div class="vert">
-          <h3>Le vert est la couleur dominante de l’interface. <br><br>Justifications :</h3>
-          <ol>
-            <li>Il symbolise la bienveillance, l’entraide et l’équilibre, valeurs centrales du projet.</li>
-            <li>Il évoque la sécurité et la stabilité, des éléments essentiels lorsqu’il s’agit de logement et de
-              cohabitation.</li>
-            <li>Le vert est également associé à l’espoir et au renouveau, en cohérence avec l’idée de créer de nouvelles
-              formes de solidarité entre générations.</li>
-          </ol>
+          <div>
+            <h3>Le vert est la couleur dominante de l’interface.</h3>
+            <span>Justifications :</span>
+            <ol>
+              <li>Il symbolise la bienveillance, l’entraide et l’équilibre, valeurs centrales du projet.</li>
+              <li>Il évoque la sécurité et la stabilité, des éléments essentiels lorsqu’il s’agit de logement et de
+                cohabitation.</li>
+              <li>Le vert est également associé à l’espoir et au renouveau, en cohérence avec l’idée de créer de
+                nouvelles
+                formes de solidarité entre générations.</li>
+            </ol>
+          </div>
+          <img src="assets/Component 2.svg" alt="">
         </div>
       </div>
     </section>
     <section class="padding-section">
-      <h2>Et après ?</h2>
-      <div class="container">
-        <p>Afin de renforcer la confiance et la sécurité entre les utilisateurs, nous prévoyons de développer de
-          nouvelles fonctionnalités. Parmi elles, la mise en place d’une fonctionnalité de “rendez-vous” avant
-          l’acceptation définitive d’une demande d’hébergement. <br>
-
-          Cette fonctionnalité permettra aux hôtes et aux voyageurs d’organiser une rencontre préalable (physique ou
-          virtuelle) afin d’échanger, de mieux se connaître et de confirmer que les attentes de chacun sont alignées.
-          Elle contribuera à instaurer un climat de confiance, à réduire les risques et à sécuriser davantage les
-          échanges avant tout engagement.</p>
+      <div class="container conclusion">
+        <div>
+          <h2>Et après ?</h2>
+          <p>
+            Afin de renforcer la confiance et la sécurité, nous souhaitons développer de nouvelles fonctionnalités, dont un système de rendez-vous préalable avant l’acceptation définitive d’une demande d’hébergement, ainsi que des solutions dédiées aux situations de grand froid.
+            Le rendez-vous (physique ou virtuel) permettra aux hôtes et aux voyageurs d’échanger en amont, d’aligner leurs attentes et de sécuriser les échanges avant tout engagement.
+          </p>
+        </div>
+        <div>
+          <h2>Conclusion</h2>
+          <p>Ce projet propose une solution solidaire et durable aux enjeux sociaux actuels en mettant en relation
+            étudiants et seniors. Il lutte à la fois contre la précarité du logement étudiant et l’isolement des
+            personnes
+            âgées, tout en favorisant l’entraide et la création de liens intergénérationnels durables.</p>
+        </div>
       </div>
-    </section>
-    <section class="padding-section">
-      <h2>Conclusion</h2>
-      <div class="container">
-        <p>Ce projet propose une solution solidaire et durable aux enjeux sociaux actuels en mettant en relation
-          étudiants et seniors. <br> Il lutte à la fois contre la précarité du logement étudiant et l’isolement des personnes
-          âgées, tout en favorisant l’entraide et la création de liens intergénérationnels durables.</p>
       </div>
     </section>
 
@@ -213,13 +262,14 @@
       <div class="logoText">
 
 
-        <p>A propos
+        <p> <strong>A propos</strong> <br>
           Projet solidaire visant a mettre en relation des étudiants et des seniors en période de canicule, dans un
           cadre sécurisé et bienveillant.
         </p>
         <div class="socials">
           <strong>Follow us</strong>
-          <p>Instagram</p>
+          <p>Instagram </p>
+          <img src="assets/image.png" alt="">
           <p>contact@homefresh.fr</p>
         </div>
         <div class="thirddiv">

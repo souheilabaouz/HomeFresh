@@ -43,6 +43,9 @@ p {
     font-family: "Poppins";
     color: var(--texte-color);
 }
+strong{
+    font-family: "Poppins";
+}
 .btn{
     background-color: var(--main-color);
     border-radius: 50px;
@@ -64,6 +67,7 @@ a{
     flex-direction: column;
     justify-content: center;
         gap: 20px;
+        flex: 45%;
 }
 /* Container Settings */
 .padding-section{
@@ -73,11 +77,13 @@ a{
     max-width: 1080px;
     margin: auto;
     text-align: center;
+    flex-wrap: wrap;
 }
 body{
     background-color: var(--bg-color);    
     z-index: -1;
     position: relative;
+    border: red solid 1px;
 }
 
 
@@ -116,6 +122,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+    background-color: var(--head-bg-color);
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
         height: 100vh;
     padding: 24px;
     background-color: var(--head-bg-color);
@@ -127,6 +141,9 @@ header {
     }
     .btn{
             margin-top: 24px;
+    }
+    img{
+        max-width: 51%;
     }
 
 }
@@ -148,6 +165,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 32px;
+        padding: 40px 24px;
+            flex-wrap: wrap;
         padding: 80px 24px;
     img {
         height: 100px;
@@ -160,15 +179,17 @@ header {
     gap: 50px;
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
     span{
-       font-size: 50px;
-        
+       font-size: 50px;   
     }
     div {
         flex-direction: column;
-        width: 478px;
+        width: 320px;
         height: 329px;
         display: flex;
+        padding: 0px 10px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -220,6 +241,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 35px;
+        flex-wrap: wrap;
     img{
         width: 500px;
         height: 550px;
@@ -244,6 +266,9 @@ header {
     justify-content: center;
     align-items: center;
     width: 500px;
+    p:first-child{
+        font-style: italic;
+    }
     img {
     height: 64px;
     aspect-ratio: 1;
@@ -384,6 +409,22 @@ header {
     flex-direction: row-reverse;
     
 }
+.ctabuttons{
+    display: flex;
+    gap: 20px;
+    img{
+        width: 150px;
+        height: 55px;
+    }
+}
+.ctaText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .ctaText{
     display: flex;
     flex-direction: column;
@@ -453,6 +494,7 @@ form{
     ul{
         list-style: none;
     }
+    background-color: var(--head-bg-color);
 }
 .socials{
     display: flex;
@@ -475,4 +517,21 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 0px 10px 10px 10px;
+    background-color: var(--head-bg-color);
+}
+
+/* responsive */
+@media (max-width: 500px) {
+nav{
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    z-index: 1;
+    padding: 17px;
+    width: 100vw;
+    border-radius: 0;
+    svg,.btn{
+        display: none;
+    }
+}
 }
